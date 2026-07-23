@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeroTrack - Gamified Routine & Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation Bar -->
+    <header class="top-nav">
+        <div class="brand">
+            <span class="rocket-icon">🚀</span>
+            <h2>HeroTrack :</h2>
+        </div>
+        
+        <form id="registerForm" class="register-group">
+            <label for="childNameInput">Child Name:</label>
+            <input type="text" id="childNameInput" autocomplete="off" placeholder="Type name here...">
+            <button type="submit" id="registerBtn" class="btn-cyan">🚀 Register Hero</button>
+        </form>
+
+        <button id="monthlyReportBtn" class="btn-purple">🏆 Leaderboard & Monthly Report</button>
+        <button id="manualResetBtn" class="btn-reset-main">🔄 Reset All Data</button>
+    </header>
+
+    <!-- Main Container for Child Cards -->
+    <main id="childrenContainer" class="cards-container">
+        <!-- Cards loaded dynamically -->
+    </main>
+
+    <!-- Leaderboard / Monthly Report Modal -->
+    <div id="monthlyModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🏆 Hall of Champions & Scores</h3>
+                <button id="closeModalBtn" class="close-btn">&times;</button>
+            </div>
+            <div id="modalBody" class="modal-body">
+                <!-- Winners and Leaderboard injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
